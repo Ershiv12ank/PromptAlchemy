@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Prompts - PromptAlchemy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <!-- === Sticky Header (Same on all pages) === -->
+    <header class="sticky-header">
+        <nav class="container">
+            <a href="index.html" class="logo">PromptAlchemy ✨</a>
+            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark and light mode">
+                <i class="ph ph-sun"></i><i class="ph ph-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="prompts-page-container">
+            <!-- === Page Header === -->
+            <div class="prompts-header">
+                <a href="index.html" class="back-link"><i class="ph ph-arrow-left"></i> Back to Categories</a>
+                <h1>Health & Well-being</h1>
+                <div class="search-bar-container">
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input type="text" id="search-bar" placeholder="Filter health prompts...">
+                </div>
+            </div>
+
+            <!-- === Prompts List === -->
+            <div id="prompts-list" class="prompts-list-container">
+                
+                <!-- Nutrition & Diet -->
+                <div class="prompt-block"><p>Act as a nutritionist. I want to transition to a [plant-based/Mediterranean/low-carb] diet. Create a 7-day meal plan with recipes and a grocery list for a beginner.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I struggle with sugar cravings. Explain the science behind them and provide 10 practical strategies to manage and reduce these cravings effectively.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Generate a list of 20 high-protein, low-calorie snack ideas that require minimal preparation.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Explain the concept of 'intermittent fasting' for a beginner. Outline the most common methods (16/8, 5:2) and discuss the potential benefits and risks.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I want to improve my gut health. What are prebiotics and probiotics? Provide a list of 10 foods for each category.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Create a guide to reading nutrition labels. What are the key things to look for to make healthier choices at the grocery store?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I have a food intolerance to [dairy/gluten/nuts]. Provide 15 delicious and easy-to-make recipe substitutions for common meals.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Design a hydration plan for me. I am [age] years old, weigh [weight], and exercise [number] times a week. How much water should I drink, and are there other hydrating fluids you'd recommend?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What are micronutrients and why are they important? List 5 crucial micronutrients and the best food sources to get them.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I'm trying to eat healthier on a budget. Create a sample weekly grocery list and meal plan for one person for under [$50/$75].</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+
+                <!-- Physical Fitness -->
+                <div class="prompt-block"><p>Act as a personal trainer. I am a beginner and want to start working out at home with no equipment. Design a 4-week full-body workout plan.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>My fitness goal is to [run a 5k/increase my flexibility/build upper body strength]. Create a progressive 3-month training program to help me achieve this.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Explain the importance of a warm-up and cool-down. Provide a 5-minute dynamic warm-up routine and a 5-minute static stretching cool-down routine.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I have a desk job and experience back pain. Suggest 10 simple stretches and exercises I can do at my desk throughout the day to alleviate discomfort.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What is High-Intensity Interval Training (HIIT)? Create a 20-minute HIIT workout routine that can be done at home.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I want to improve my posture. What are the common causes of poor posture, and what are 5 corrective exercises I can do daily?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>How do I properly perform a [squat/deadlift/push-up]? Provide a step-by-step guide with common mistakes to avoid.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I find cardio boring. Suggest 10 fun and engaging activities that are great for cardiovascular health, besides running on a treadmill.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What is 'active recovery'? Explain its benefits and provide a sample active recovery day workout plan.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Design a workout plan focused on improving core strength to support my back and overall stability.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                
+                <!-- Mental Health & Stress Management -->
+                <div class="prompt-block"><p>Act as a therapist. I am feeling overwhelmed and burnt out. Guide me through a reflective journaling session to identify the sources of my stress and brainstorm solutions.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Create a 10-minute guided meditation script for anxiety relief, focusing on breathing and body scan techniques.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Explain the concept of Cognitive Behavioral Therapy (CBT). Provide a simple exercise to help me identify and challenge a negative thought pattern I have about [myself/my abilities].</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Generate a list of 20 healthy coping mechanisms for dealing with stress, categorized into physical, mental, and creative outlets.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What is 'imposter syndrome'? Describe its common signs and provide 5 strategies to overcome it.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Design a 'mental health toolkit'. What are 10 things I can prepare in advance to help me on days when I'm feeling low?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I struggle with social anxiety. Provide 5 small, manageable steps I can take to gradually become more comfortable in social situations.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Create a list of 15 powerful affirmations for building self-confidence and a positive self-image.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Explain the 'Pomodoro Technique' and how it can be used to manage focus and reduce procrastination-related anxiety.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Guide me in creating a 'worry journal'. What structure should I use to document my anxieties and reframe them in a more constructive way?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+
+                <!-- Sleep -->
+                <div class="prompt-block"><p>Act as a sleep specialist. I have trouble falling asleep. Analyze my current evening routine: [describe routine] and suggest 5 changes to create an optimal sleep hygiene protocol.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Explain the different stages of sleep (Light, Deep, REM) and why each is important for my health.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Create a 10-minute guided meditation or relaxation script specifically designed to be used before bed to calm a racing mind.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What is the relationship between caffeine, alcohol, and sleep quality? Provide clear guidelines on consumption for better rest.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I often wake up in the middle of the night and can't get back to sleep. What are 5 things I can do to fall back asleep without resorting to my phone?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Generate a list of 10 foods and drinks that are known to promote sleep.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>How does light exposure (especially blue light) affect my circadian rhythm? Provide best practices for managing light exposure throughout the day and evening.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Is napping good for you? Provide a guide on how to nap effectively without disrupting nighttime sleep.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Design a 'wind-down' routine for the hour before bed that doesn't involve screens.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I think I might have 'revenge bedtime procrastination'. Explain what this is and provide strategies to overcome it.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+
+                <!-- Holistic & Preventative Health -->
+                <div class="prompt-block"><p>Create a simple daily checklist for a healthy lifestyle, covering nutrition, exercise, mental health, and sleep.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Explain the concept of 'mindful eating'. Guide me through a 5-minute exercise to practice it with my next meal.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What are the health benefits of spending time in nature (forest bathing)? Suggest 5 ways to incorporate more nature into my life, even if I live in a city.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I want to build healthier habits. Explain the '2-minute rule' and how I can use it to start new habits like [exercising/meditating/reading].</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Generate a list of essential questions to ask my doctor during my next annual check-up to be proactive about my health.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What is the '80/20 rule' in the context of diet and health? How can I apply it to create a sustainable and non-restrictive lifestyle?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Create a plan to reduce my daily screen time by 25%. Analyze my current usage and suggest practical swaps for my phone habits.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Explain the health risks associated with a sedentary lifestyle and provide 10 creative ways to move more throughout the day.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What are some common vitamin deficiencies (like Vitamin D or B12)? What are their symptoms and best food/sunlight sources?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Design a 'digital detox' plan for a weekend. What are the rules, and what are some alternative activities I can do?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                
+                <!-- More Prompts -->
+                <div class="prompt-block"><p>How can I create a morning routine that energizes me for the day instead of making me feel rushed?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Explain the benefits of yoga for both physical and mental health. Suggest a 15-minute beginner's yoga flow.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I want to quit [smoking/vaping]. Act as a cessation coach and provide a 30-day step-by-step plan with coping strategies for cravings.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What are the key differences between strength training and cardio? How much of each should I aim for per week for optimal health?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I'm feeling unmotivated to exercise. Provide 10 mindset shifts and practical tips to get me moving when I don't feel like it.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What is 'meal prepping'? Provide a beginner's guide, including essential containers, a sample menu, and tips to make it efficient.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Create a journaling prompt list of 30 questions for a month of self-reflection on my health and well-being.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>How can I practice gratitude to improve my mental well-being? Suggest 5 simple gratitude exercises.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Explain the concept of 'body neutrality' as an alternative to body positivity.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I have a high-stress job. Design a 5-minute mindfulness routine I can do at my desk to decompress after a difficult meeting.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What are the benefits of cold exposure (like cold showers)? Provide a safe protocol for a beginner to try it.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I want to drink less alcohol. What are some strategies, and can you suggest 10 sophisticated non-alcoholic drink recipes?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>How do I find a therapist that's right for me? What questions should I ask during a consultation?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What is the connection between chronic inflammation and disease? List 10 anti-inflammatory foods I should incorporate into my diet.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Create a 'self-care' menu with ideas categorized by time commitment: 5 minutes, 15 minutes, 30 minutes, and 1 hour.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>I want to improve my balance. Design a simple 10-minute routine with exercises to enhance stability.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Explain the 'fight or flight' response and how techniques like deep breathing can activate the 'rest and digest' system.</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>How can I build a more resilient mindset to bounce back from setbacks and challenges?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>What are some healthy ways to process difficult emotions like anger or sadness instead of suppressing them?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+                <div class="prompt-block"><p>Design a healthy travel plan. How can I maintain my diet and exercise routine while on vacation or a business trip?</p><button class="copy-btn"><i class="ph ph-copy"></i> Copy</button></div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
